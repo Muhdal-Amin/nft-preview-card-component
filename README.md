@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
--Live Site URL: []()
+-Live Site URL: []( https://muhdal-amin.github.io/nft-preview-card-component/)
 
 ## My process
 
