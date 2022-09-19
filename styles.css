@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Libre+Baskerville&family=Outfit:wght@100;400&family=PT+Serif:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  min-height: 95vh;
+}
+.card {
+position: relative;
+height: clamp(543px, 100%, 596px);
+width: clamp(327px, 100%, 350px);
+margin: auto 25px;
+padding: 24px 25px 24px 24px;
+background-color: hsl(216, 50%, 16%);
+border-radius: 15px;
+margin-top: 18px;
+}
+.main {
+min-height: 95vh;
+display: flex;
+justify-content: center;
+}
+
+.card__img-container {
+position: relative;
+}
+.card__img {
+display: block;
+width: 100%;
+margin-bottom: 24px;
+border-radius: 8px;
+} 
+
+.card__overlay {
+z-index: 3;
+position: absolute;
+top: calc(50% - 24px);
+right: calc(50% - 24px);
+opacity: 0;
+}
+
+.card__overlay-bg {
+z-index: 2;
+position: absolute;
+left:0;
+bottom: 0;
+width: 100%;
+height: 100%;
+border-radius: 8px;
+background-color: hsl(178, 100%, 50%);
+opacity: 0;
+}
+
+.card__img-container:hover .card__overlay {
+opacity: 1;
+}
+.card__img-container:hover .card__overlay-bg {
+opacity: 0.5;
+}
+
+.card__title {
+margin-bottom: 12px;
+margin-left: 5px;
+color: hsl(0, 0%, 100%);
+font-size: 22px;
+font-weight: 600px;
+line-height: 28px;
+}
+
+.card__description {
+margin-bottom: 0px;
+font-weight: 300px;
+line-height: 26px;
+margin-left: 5px;
+font-family: "Outfit", sans-serif;
+color: hsl(215, 51%, 70%);
+font-size: 18px;
+}
+.card__data {
+font-size: 16px;
+display: flex;
+margin-bottom: 26px;
+}
+
+.card__eth,
+.card__date {
+display: flex;
+}
+
+.card__eth {
+color: hsl(178, 100%, 50%);
+font-size: 15px;
+}
+
+.card__eth-icon {
+margin-left: 7px;
+}
+
+.card__date {
+font-weight: 300px;
+line-height: 19px;
+color: hsl(215, 51%, 70%);
+}
+
+.card__date-icon {
+margin-right: 7.7px;
+padding-left: 110px;
+}
+.card__footer {
+display: flex;
+align-items: center;
+padding-top: 15px;
+border-top: 1px solid hsl(215, 32%, 27%);
+margin-left: 10px;
+margin-right: 2px;
+font-size: 16px;
+padding-bottom: 7px;
+}
+
+.card__avatar {
+width: 33px;
+height: 33px;
+margin-left: 18px;
+border: 1px solid hsl(0, 0%, 100%);
+border-radius: 100%;
+margin-left: 1px;
+}
+.card__author {
+color: hsl(0, 0%, 100%);
+}
+.card__creation-of {
+font-size: 16px;
+color: hsl(215, 51%, 70%);
+
+}
+a:link {
+text-decoration: none;
+color: hsl(0, 0%, 100%);
+}
+a:hover {
+color: hsl(178, 100%, 50%);
+}
+.challenge {
+color: hsl(0, 0%, 100%);
+}
+.project {
+color: hsl(215, 51%, 70%);
+position: fixed;
+font-size: 0.7em;
+text-align: center;
+width: 98.9vw;
+}
+@media screen and (max-width: 500px) {
+  .main {
+    width: 325px;
+  }
+}
